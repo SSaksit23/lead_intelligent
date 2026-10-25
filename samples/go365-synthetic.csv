@@ -1,0 +1,5 @@
+﻿customer id,ชื่อ-นามสกุล,โทรศัพท์,อีเมล,agency,trip code,trip name,departure date
+C001,สมชาย ใจดี,0810000001,somchai@example.test,Northern Demo,KM001,คุนหมิง — ตัวอย่าง,2026-12-10
+C002,มาลี สุขใจ,0810000001,,Northern Demo,,,
+C003,Invalid example,not-a-phone,bad-email,,,,31/02/2026
+C004,No date example,,,,DEMO,Unknown date trip,

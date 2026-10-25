@@ -1,0 +1,9 @@
+node_modules/
+.next/
+.env*
+!.env.example
+*.tsbuildinfo
+storage/
+backups/
+test-results/
+B2B-B2C-CRM-design.md

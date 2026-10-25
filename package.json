@@ -1,0 +1,43 @@
+{
+  "name": "go365-lead-intelligence",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --webpack --hostname 127.0.0.1",
+    "build": "next build --webpack",
+    "start": "next start --hostname 127.0.0.1",
+    "worker": "tsx --env-file=.env scripts/worker.ts",
+    "setup": "tsx --env-file=.env scripts/setup.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx --env-file=.env scripts/migrate.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/unit.test.ts",
+    "test:integration": "tsx --test tests/integration.test.ts",
+    "fixtures": "tsx scripts/fixtures.ts",
+    "backup": "tsx --env-file=.env scripts/backup.ts",
+    "db:local": "tsx --env-file=.env scripts/local-db.ts",
+    "test:browser": "tsx scripts/browser-test.ts",
+    "seed:demo": "tsx --env-file=.env scripts/seed-demo.ts",
+    "seed:line-demo": "tsx --env-file=.env scripts/seed-line-demo.ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "0.45.4",
+    "next": "^16.0.0",
+    "postgres": "^3.4.7",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "drizzle-kit": "^0.31.0",
+    "embedded-postgres": "^18.4.0-beta.17",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
